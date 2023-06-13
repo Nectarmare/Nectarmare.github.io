@@ -35,3 +35,17 @@ p{
   width: 40%;
   border-radius: 50%;
 }
+.leftclover{
+  width: 7%;
+  position: absolute;
+  left: 92%;
+  top:15%;
+  transform:rotate(45deg);
+}
+.rightclover{
+  width: 7%;
+  position: absolute;
+  right: 92%;
+  top:15%;
+  transform: rotate(-45deg);
+}
