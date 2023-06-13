@@ -1,15 +1,30 @@
 .heading-style{
+  color:#eafae6;
   padding: 1rem 4rem;
   background-image: url("../Graphics/clover.png");
   background-size: 300px;
   font-size: 1.5rem;
   font-weight: bold;
   background-repeat: repeat-x;
-  color:#eafae6;
+}
+.nav-item{
+  color: #eafae6;
 }
 .main-site{
   padding: 0 2rem;
   color: #042b1a;
   text-align: center;
   background-color: #eafae6;
+}
+.screenshot{
+  width: 450px;
+  margin: 5px;
+  border-radius: 7px;
+}
+.images{
+  padding: 1rem;
+  background-image: url("../Graphics/clover.png");
+  background-size: 520px;
+  background-repeat: repeat-x;
+  border-radius: 10px;
 }
