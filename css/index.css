@@ -1,7 +1,7 @@
 .heading-style{
   color:#eafae6;
   padding: 1rem 4rem;
-  background-image: url("../Graphics/clover.png");
+  background-image: url("../Graphics/clover_alt.png");
   background-size: 300px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -23,7 +23,7 @@
 }
 .images{
   padding: 1rem;
-  background-image: url("../Graphics/clover.png");
+  background-image: url("../Graphics/clover_alt.png");
   background-size: 520px;
   background-repeat: repeat-x;
   border-radius: 10px;
