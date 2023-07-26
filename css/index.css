@@ -1,3 +1,38 @@
+body{
+    
+    background-color: #11220f;
+    padding: 1.2rem;
+}
+.background{
+    position: relative;
+}
+ .titel{
+  width: auto;
+  height : auto;
+  max-height: 100%;
+  max-width: 100%;
+    
+    
+    background-image: url("../Graphics/TitelImage.png");
+    background-size: contain;
+    border-radius:21px 21px 0 0;
+   
+}
+.shadow{
+    background-image: url("../Graphics/Shadow.png");
+     border-radius:0 0 21px 21px;
+    
+}
+iframe { 
+  width: 100%;
+  aspect-ratio: 16 / 9;
+     
+}
+#trailer{
+    width: 80%;
+    margin: auto;
+   
+}
 h1{
   font-size: 2.5rem;
   font-weight: bold;
@@ -15,11 +50,13 @@ h3{
 }
 p{
   text-align: left;
+    color: black;
+    margin:  2rem 5%;
 }
 .heading-style{
   color:#eafae6;
   padding: 1rem 4rem;
-  background-image: url("../Graphics/clover_alt.jpg");
+ 
   background-size: 300px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -29,10 +66,20 @@ p{
   color: #eafae6;
 }
 .main-site{
-  padding: 0 2rem;
-  color: #042b1a;
+  
+  
   text-align: center;
+    
   background-color: #eafae6;
+    background-image:url("../Graphics/BackGroundImage.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+     border-style: solid;
+    color: #2b5f29;
+    border: 0.5rem solid;
+    border-radius: 30px;;
+   
+    
 }
 .screenshot{
   width: 450px;
@@ -41,10 +88,8 @@ p{
 }
 .images{
   padding: 1rem;
-  background-image: url("../Graphics/clover_alt.jpg");
-  background-size: 520px;
-  background-repeat: repeat-x;
-  border-radius: 10px;
+  
+  
 }
 .portrait{
   width: 40%;
@@ -63,4 +108,13 @@ p{
   right: 92%;
   top:15%;
   transform: rotate(-45deg);
+}
+.eye{
+    
+    width: 7%;
+   position: absolute;
+  left: 69.5%;
+  top:45.5%;
+     margin: 0px auto;
+    background-image: ;
 }

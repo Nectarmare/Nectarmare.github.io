@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
+       
     <section id = "heading-banner" class ="heading-style">
         <nav class = "navbar navbar-lg">
           <a class = "nav-item active" href="#game">The Game</a>
@@ -14,55 +15,66 @@
           <a  class = "nav-item" href="#team" >The Team</a>
         </nav>
     </section>
+     
     <section class ="main-site">
-      <div id="game">
-      <h1>Nectarmare</h1>
-      <h2>A Game About a Honey Bee</h2>
-      <img class ="leftclover" src ="./Graphics/cloverLeaf.png" alt ="small clover leaf"/>
-      <img class = "rightclover" src ="./Graphics/cloverLeaf.png" alt ="small clover leaf"/>
-      <div class="images">
-        <img class ="screenshot"src="./Graphics/Screenshot1.jpg" alt="screenshot 1">
-        <img class ="screenshot"src="./Graphics/Screenshot2.jpg" alt="screenshot 2">
-        <img class ="screenshot"src="./Graphics/screenshot3.jpg" alt="screenshot 3">
-      </div>
-      <p>Controlling a small honey bee the player of this game will collect
-      nectar while avoiding numerous perilous dangers on the way. Inclduing but not limited
-      to the carnivouros fly, the skullspider and the evil flower with an eye resting in the middle.
-      The game takes place in a number of beautiful evokative environments ranging from deep forest
-    to summery fields and tranquil water. </p>
-      </div>
-      <div id="trailer">
-        <h1>Trailer</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0ADDSR5HvQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div id="team">
-      <h1>Our Team</h1>
-      <div class="row">
-        <div class="col">
-          <h3>Ingeborg Asplund</h3>
-          <img class ="portrait"src="./Graphics/Ingeborg.jpg" alt="Ingeborg">
-          <p>Programmer and game designer with long experience of Unity and C#. MsC in Media Technology and design. She has worked on Leveldesign, gamedesign and programming of backend systems.</p>
+        <div>
+        <div class="background">
+        <img class="eye" src="Graphics/IMG_3752.png">
+            <img class="titel" src="Graphics/TitelShadow.png">
+            
+        
         </div>
-        <div class="col">
-          <h3>Stanislav Hallberg</h3>
-          <img class ="portrait" src="./Graphics/stanislav.jpg" alt="Stanislav">
-          <p>Programmer and game designer with long experience of Unity and C#. He has worked on core AI, coregameplay systems and Graphics implementation. </p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Natali Hallberg</h3>
-          <img class ="portrait" src="./Graphics/natali.jpg" alt="Natali">
-          <p>Professional artist with background in traditional media. She has made all of the art assets in the game as well as given input regarding the artistic vision.</p>
-        </div>
-        <div class="col">
-          <h3>Mary-Ann Sensoy</h3>
-          <img class ="portrait" src="Graphics/mary-ann.jpg" alt="Mary-Ann">
-          <p>Musician and sound designer. She has a college degree as well as Higher Vocational Education in music.
-          She has composed the games music and made the sound effects.</p>
-        </div>
-      </div>
-      </div>
+        <div class="shadow">
+            <div  id="trailer">
+                <iframe  src="https://www.youtube.com/embed/0ADDSR5HvQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div  id="game">
+                  <p>Controlling a small honey bee the player of this game will collect
+                      nectar while avoiding numerous perilous dangers on the way. Inclduing but not limited
+                      to the carnivouros fly, the skullspider and the evil flower with an eye resting in the middle.
+                      The game takes place in a number of beautiful evokative environments ranging from deep forest
+                    to summery fields and tranquil water. </p>
+                  
+                  <div class="images">
+                    <img class ="screenshot"src="./Graphics/Screenshot1.jpg" alt="screenshot 1">
+                    <img class ="screenshot"src="./Graphics/Screenshot2.jpg" alt="screenshot 2">
+                    <img class ="screenshot"src="./Graphics/screenshot3.jpg" alt="screenshot 3">
+                  </div>
+                      
+              </div>
+              
+              <div  id="team">
+                     <h1>Our Team</h1>
+              <div class="row">
+                <div class="col">
+                  <h3>Ingeborg Asplund</h3>
+                  <img class ="portrait"src="./Graphics/Ingeborg.jpg" alt="Ingeborg">
+                  <p>Programmer and game designer with long experience of Unity and C#. MsC in Media Technology and design. She has worked on Leveldesign, gamedesign and programming of backend systems.</p>
+                </div>
+                <div class="col">
+                  <h3>Stanislav Hallberg</h3>
+                  <img class ="portrait" src="./Graphics/stanislav.jpg" alt="Stanislav">
+                  <p>Programmer and game designer with long experience of Unity and C#. He has worked on core AI, coregameplay systems and Graphics implementation. </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h3>Natali Hallberg</h3>
+                  <img class ="portrait" src="./Graphics/natali.jpg" alt="Natali">
+                  <p>Professional artist with background in traditional media. She has made all of the art assets in the game as well as given input regarding the artistic vision.</p>
+                </div>
+                <div class="col">
+                  <h3>Mary-Ann Sensoy</h3>
+                  <img class ="portrait" src="Graphics/mary-ann.jpg" alt="Mary-Ann">
+                  <p>Musician and sound designer. She has a college degree as well as Higher Vocational Education in music.
+                  She has composed the games music and made the sound effects.</p>
+                </div>
+              </div>
+              </div>
+            </div>
     </section>
   </body>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="indexScript.js"></script>
 </html>
