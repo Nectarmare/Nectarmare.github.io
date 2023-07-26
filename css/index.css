@@ -31,22 +31,30 @@ iframe {
 #trailer{
     width: 80%;
     margin: auto;
+    padding: 1rem 1rem 1rem 1rem ;
+     color: #2b5f29;
+    border: 0.5rem solid;
+    border-radius: 30px;
+    background-color: #11220f;
    
 }
 h1{
   font-size: 2.5rem;
   font-weight: bold;
   font-style: italic;
+    color:orange;
 }
 h2{
   font-size: 2rem;
   font-weight: bold;
   font-style: italic;
+    color: yellow;
 }
 h3{
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
+    color: yellow;
 }
 p{
   text-align: left;
@@ -80,6 +88,9 @@ p{
     border-radius: 30px;;
    
     
+}
+#game{
+    padding-top:1.5rem;
 }
 .screenshot{
   width: 450px;
@@ -117,4 +128,18 @@ p{
   top:45.5%;
      margin: 0px auto;
     background-image: ;
+}
+.dark{
+    
+    background-color: #11220f;
+     border-style: solid;
+    color: #2b5f29;
+    border: 0.5rem solid;
+    border-radius: 30px;
+    margin: auto 10% ;
+    padding-top: 1rem;
+    
+}
+.dark p{
+    color: white;
 }
