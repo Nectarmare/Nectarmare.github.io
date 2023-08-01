@@ -1,18 +1,31 @@
-const eyeOfDoom = $('.eye');
-function move_mouse(evt){
-  var offset = eyeOfDoom.offset
-  //set up the centerpoint and position of the mouse on the screen
-   let center_x = (offset.left)+(eyeOfDoom.width()/2);
-   let center_y = (offset.top) 0(eyeOfDoom.height()/2);
-   let mouse_x = evt.pageX;
-   let mouse_y = evt.pageY;
-   //calculate relation between mouse position and eye.
-   let radians = Math.atan2(mouse_x-center_x,mouse_y-center_y);
-   let degree = (radians*(180/Math.PI)*-1)+90;
-   eyeOfDoom.css('-moz-transform', 'rotate(' + degree + 'deg)');
-   eyeOfDoom.css('-webkit-transform', 'rotate(' + degree + 'deg)');
-   eyeOfDoom.css('-o-transform', 'rotate(' + degree + 'deg)');
-   eyeOfDoom.css('-ms-transform', 'rotate(' + degree + 'deg)');
 
-   $(document).mousemove(move_mouse);
+let mouseXY = {};
+$(document).on("mousemove", function(event){
+  mouseXY.X = event.pageX;
+  mouseXY.Y = event.pageY;
+});
+
+let eye = $(".eye");
+let previousXY = {X: null, Y: null};
+
+let eyeInterval = setInterval(function(){
+
+if(previousXY.Y != mouseXY.Y || previousXY.X != mouseXY.X && (previousXY.Y != null || previousXY.X != null)){
+  let eyeXY = eye.position();
+  console.log(eye.position());
+  let diffX = eyeXY.left -mouseXY.X;
+  let diffY = eyeXY.top -mouseXY.Y;
+  let value = diffY/diffX;
+
+  let atan = Math.atan(value)*180/Math.PI;
+  if(diffY>0 && diffX>0){
+    atan += 180;
+  }
+  else if (diffY<0 && diffX>0){
+    atan -=180;
+  }
+  previousXY.X = mouseXY.X;
+  previousXY.Y = mouseXY.Y;
+  eye.css({transform:"rotate(" + atan+"deg)"});
 }
+},10);

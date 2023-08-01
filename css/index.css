@@ -1,5 +1,5 @@
 body{
-    
+
     background-color: #11220f;
     padding: 1.2rem;
 }
@@ -11,27 +11,27 @@ body{
   height : auto;
   max-height: 100%;
   max-width: 100%;
-    
-    
+
+
     background-image: url("../Graphics/TitelImage.png");
     background-size: contain;
     border-radius:21px 21px 0 0;
-   
+
 }
 .shadow{
     background-image: url("../Graphics/Shadow.png");
      border-radius:0 0 21px 21px;
-    
+
 }
-iframe { 
+iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
-     
+
 }
 #trailer{
     width: 80%;
     margin: auto;
-   
+
 }
 h1{
   font-size: 2.5rem;
@@ -56,7 +56,7 @@ p{
 .heading-style{
   color:#eafae6;
   padding: 1rem 4rem;
- 
+
   background-size: 300px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -66,10 +66,10 @@ p{
   color: #eafae6;
 }
 .main-site{
-  
-  
+
+
   text-align: center;
-    
+
   background-color: #eafae6;
     background-image:url("../Graphics/BackGroundImage.png");
     background-repeat: repeat-y;
@@ -78,8 +78,8 @@ p{
     color: #2b5f29;
     border: 0.5rem solid;
     border-radius: 30px;;
-   
-    
+
+
 }
 .screenshot{
   width: 450px;
@@ -88,8 +88,8 @@ p{
 }
 .images{
   padding: 1rem;
-  
-  
+
+
 }
 .portrait{
   width: 40%;
@@ -110,11 +110,10 @@ p{
   transform: rotate(-45deg);
 }
 .eye{
-    
-    width: 7%;
-   position: absolute;
+  width: 7%;
+  position: absolute;
   left: 69.5%;
   top:45.5%;
-     margin: 0px auto;
-    background-image: ;
+  margin: 0px auto;
+  
 }
