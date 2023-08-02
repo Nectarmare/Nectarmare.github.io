@@ -8,24 +8,22 @@ $(document).on("mousemove", function(event){
 let eye = $(".eye");
 let previousXY = {X: null, Y: null};
 
-let eyeInterval = setInterval(function(){
+let eyeInterval = setInterval(function(event){
 
 if(previousXY.Y != mouseXY.Y || previousXY.X != mouseXY.X && (previousXY.Y != null || previousXY.X != null)){
-  let eyeXY = eye.position();
-  console.log(eye.position());
-  let diffX = eyeXY.left -mouseXY.X;
-  let diffY = eyeXY.top -mouseXY.Y;
-  let value = diffY/diffX;
+  let offset = eye.offset();
+  let width = eye.width();
+  let height = eye.height();
 
-  let atan = Math.atan(value)*180/Math.PI;
-  if(diffY>0 && diffX>0){
-    atan += 180;
-  }
-  else if (diffY<0 && diffX>0){
-    atan -=180;
-  }
-  previousXY.X = mouseXY.X;
-  previousXY.Y = mouseXY.Y;
-  eye.css({transform:"rotate(" + atan+"deg)"});
+  let centerX  = offset.left+width/2;
+  let centerY = offset.top + height/2;
+
+  let radians = Math.atan2(mouseXY.X-centerX,mouseXY.Y -centerY);
+
+  var degree = (radians*(180/Math.PI)*-1)+180;
+  eye.css({'-webkit-transform' : 'rotate('+ degree +'deg)',
+               '-moz-transform' : 'rotate('+ degree +'deg)',
+               '-ms-transform' : 'rotate('+ degree +'deg)',
+               'transform' : 'rotate('+ degree +'deg)'});
 }
 },10);
