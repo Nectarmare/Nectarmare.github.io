@@ -33,15 +33,22 @@ iframe {
     width: 90%;
     
     margin: auto;
-    padding: 1rem 1rem 1rem 1rem ;
+    
+    padding-top: 6rem;
+    
+   
+}
+#trailer div{
+    margin: auto;
+    
+    padding: 1rem;
      color: #2b5f29;
     border: 0.5rem solid;
     border-radius: 30px;
     background-color: #11220f;
-   
 }
 h1{
-  font-size: 2.35rem;
+  font-size: 2.5rem;
   font-weight: bold;
   padding: 0;
     color:#edca3d;
@@ -53,7 +60,7 @@ h2{
     color:#edca3d;
 }
 h3{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
  margin-top: 1rem;
     margin-bottom: 0;
@@ -62,8 +69,10 @@ h3{
 p{
   text-align: left;
     color: black;
-    margin:  2rem 5%;
+    margin:  2rem;
     margin-top: 1rem;
+     font-size: 1.3rem;
+   font-weight: bold;
 }
 
 .row{
@@ -165,36 +174,51 @@ a:active  {
      margin: -0.3rem;
 }
 #game{
-    padding-top:1.5rem;
-    margin: 3rem;
+    padding-top:6rem;
+    width: 90%;
+    margin: auto;
 }
 .screenshot{
   
   padding:  5px;
   border-radius: 7px;
+    margin: 0.1rem;
+    margin-top: 0.5rem;
 }
 .images{
   
-  width: calc(90% + 10px);
+  /*width: calc(90% + 10px);*/
      margin: auto;
     margin-top: 3rem;
   
 }
 .clover{
    object-fit:contain;
-width: 100%;
+width:auto;
 height: 3rem;
     padding: 0;
     
     
 }
+.left_clover{
+    margin-right: 3rem;
+    left: calc(30% - 5rem);
+}
+.right_clover{
+   margin-left: 3rem;
+    right: calc(30% - 5rem); 
+}
 #team{
     width: 90%;
     margin: auto;
-    margin-top: 3rem;
+   
     padding: 0;
     display: grid;
+    padding-top: 6rem;
     
+}
+.team_titel{
+    margin-bottom: 3rem;
 }
 .portrait{
   
@@ -268,7 +292,7 @@ height: 3rem;
         margin-left: 0;
     }
     
-}@media (max-width: 767px){
+}@media (max-width: 775px){
     .screenshot{
         width: 48%;
     }
@@ -280,12 +304,19 @@ height: 3rem;
     }.clover{
         display: none;
     }
+    .navbar{
+        padding: 14px 1px;
+        }
     
-}@media (max-width: 467px){
+}@media (max-width: 475px){
     .screenshot{
         width: 100%;
     }.screenshot{
         width: 100%;
+    }.navbar{
+        flex-direction: column;
+            margin: 5px;
+        margin-top: 0;
     }
     
 }@media (max-width: 377px){
