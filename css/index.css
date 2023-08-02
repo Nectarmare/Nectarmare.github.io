@@ -94,7 +94,17 @@ p{
   background-repeat: repeat-x;
 }
 .nav-item{
+    width: 9.5rem;
   color: #eafae6;
+    background-image: url(../Graphics/butten1.png);
+     background-size:cover;
+     background-repeat:no-repeat;
+    background-position: center;
+    
+    padding:0.1rem;
+}
+a:active  {
+   background-image: url(../Graphics/butten2.png);
 }
 .main-site{
   
@@ -124,7 +134,7 @@ p{
 .navbar{
     margin:0 auto;
     text-align: center;
-   padding: 14px 16px;
+   padding: 14px 10%;
     background-color: #11220f;
 }
 .navbar a {
