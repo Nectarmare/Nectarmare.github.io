@@ -53,20 +53,34 @@ h2{
 h3{
   font-size: 1.5rem;
   font-weight: bold;
- 
+ margin-top: 1rem;
+    margin-bottom: 0;
     color:#edca3d;
 }
 p{
   text-align: left;
     color: black;
     margin:  2rem 5%;
+    margin-top: 1rem;
+}
+
+.row{
+   margin: 0;
+    /*display: flex;*/
+    width: 100%;
+  display: flex;
+    flex-wrap: wrap;
 }
 .col{
     
+    flex: 1;
+    padding: 16px;
+    box-sizing: border-box;
     
 }
-.row{
-   margin: 0;
+.col .dark{
+     height: 100%;
+
 }
 .heading-style{
   color:#eafae6;
@@ -156,6 +170,7 @@ p{
     width: 90%;
     margin: auto;
     padding: 0;
+    display: grid;
 }
 .portrait{
   
@@ -163,8 +178,9 @@ p{
   border-radius: 50%;
     border-width: 1rem;
     border: 0.5rem solid;
-    padding: 0.3rem;
+    padding: 0.1rem;
     background-color: #11220f;
+     color: #6b4661;
 }
 .leftclover{
   width: 7%;
@@ -202,7 +218,7 @@ p{
 }
 .bio .dark{
     margin: 0;
-    height:inherit;
+    
     padding-bottom: 10%;
     
 }
@@ -214,6 +230,8 @@ p{
 .bio{
     margin: 0 5%;
     
+    font-size: 1.2rem;
+   font-weight: bold;
 }
 @media (min-width: 767px){
     .screenshot{
