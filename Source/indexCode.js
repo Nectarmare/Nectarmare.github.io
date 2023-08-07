@@ -27,3 +27,32 @@ if(previousXY.Y != mouseXY.Y || previousXY.X != mouseXY.X && (previousXY.Y != nu
                'transform' : 'rotate('+ degree +'deg)'});
 }
 },10);
+
+
+
+
+const images = [...document.querySelectorAll('.screenshot')];
+const popup = document.querySelector('.popup');
+const imageName = document.querySelector('.image-name');
+const largeImage = document.querySelector('.large-image');
+let index = 0; // will track our current image;
+
+images.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        
+        updateImage(i);
+         popup.classList.toggle('active').delay( 800 );
+       
+    })
+})
+
+const updateImage = (i) => {
+    let path = `https://github.com/Nectarmare/Nectarmare.github.io/blob/main/Graphics/${i+1}.jpg?raw=true`;
+    largeImage.src = path;
+   
+    
+}
+popup.addEventListener('click', () => {
+    popup.classList.toggle('active');
+    largeImage.src= null;
+})
