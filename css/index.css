@@ -122,14 +122,14 @@ a:active  {
   text-align: center;
     
   background-color: #eafae6;
-    background-image:url("../Graphics/BackGroundImage.png");
+    background-image:url("../Graphics/BackGroundImage.jpg");
     background-repeat: repeat-y;
     background-size: contain;
     /* border-style: solid;
     color: #2b5f29;
     border: 0.5rem solid;
     border-radius: 30px;;*/
-   
+   margin-bottom: -1rem;
     
 }
 #heading-banner {
