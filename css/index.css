@@ -145,7 +145,7 @@ a:active  {
 .navbar{
     margin:0 auto;
     text-align: center;
-   padding: 14px 10%;
+   padding: 14px calc(5% + 30px);
     background-color: #11220f;
     pointer-events:auto;
 }
@@ -309,6 +309,19 @@ height: 3rem;
 .popup.active{
     opacity: 1;
     pointer-events:auto;
+}
+footer{
+   margin-left: 0;
+    
+}
+
+a.link{
+    color: #a4a8fd;
+     text-decoration: none;
+}
+a.link:hover,
+a.link:focus {
+    color: #6b4661;
 }
 @media (min-width: 767px){
     .screenshot{
