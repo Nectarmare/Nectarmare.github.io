@@ -47,7 +47,7 @@ images.forEach((item, i) => {
 })
 
 const updateImage = (i) => {
-    let path = `https://github.com/Nectarmare/Nectarmare.github.io/blob/main/Graphics/${i+1}.jpg?raw=true`;
+    let path = `https://github.com/Nectarmare/Nectarmare.github.io/blob/main/Graphics/${i+1}.png?raw=true`;
     largeImage.src = path;
    
     
